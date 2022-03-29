@@ -1,0 +1,1 @@
+%load_ext kedro.extras.extensions.ipython
