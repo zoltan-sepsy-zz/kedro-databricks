@@ -13,7 +13,7 @@
 # template. Please feel free to remove it once you remove the example pipeline.
 example_iris_data:
   type: spark.SparkDataSet
-  filepath: dbfs:/iris-databricks/data/01_raw/iris.csv
+  filepath: data/01_raw/iris.csv
   file_format: csv
   load_args:
     header: true
@@ -33,7 +33,7 @@ example_classifier:
 # Target dataset to save predictions on DBFS
 example_predictions:
   type: spark.SparkDataSet
-  filepath: dbfs:/iris-databricks/data/08_reporting/predictions.parquet
+  filepath: data/08_reporting/predictions.parquet
   file_format: parquet
   save_args:
     mode: overwrite
