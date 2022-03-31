@@ -1,2 +1,2 @@
 %load_ext kedro.extras.extensions.ipython
-%reload_kedro .
+%reload_kedro /root/iris-databricks
