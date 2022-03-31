@@ -1,0 +1,3 @@
+%init_kedro .
+%reload_kedro
+%run_viz

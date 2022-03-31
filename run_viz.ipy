@@ -1,2 +1,1 @@
-%reload_kedro .
 %run_viz
