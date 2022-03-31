@@ -6,3 +6,6 @@ spark.sql.execution.arrow.pyspark.enabled: true
 
 # https://kedro.readthedocs.io/en/stable/11_tools_integration/01_pyspark.html#tips-for-maximising-concurrency-using-threadrunner
 spark.scheduler.mode: FAIR
+
+spark.master: https://adb-5204188869990703.3.azuredatabricks.net/
+spark.app.name: KedroDBR
