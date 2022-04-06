@@ -39,10 +39,10 @@ def predict(model: RandomForestClassifier, testing_data: DataFrame) -> DataFrame
     # signature = infer_signature(testing_data, predictions)
     mlflow.set_experiment('/Users/sepsy.z@pg.com/Kedro-MLflow-POC-2')
 
-    # mlflow.spark.log_model(spark_model=model,
-    #                        # signature=signature,
-    #                        registered_model_name='MLlib_iris_classifier',
-    #                        artifact_path="MLlib_iris_classifier")
+    mlflow.spark.log_model(spark_model=model,
+                           # signature=signature,
+                           registered_model_name='MLlib_iris_classifier',
+                           artifact_path="MLlib_iris_classifier")
     return predictions
 
 
